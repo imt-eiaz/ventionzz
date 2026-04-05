@@ -1,0 +1,6 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan portrait">
+  <rect width="240" height="240" rx="40" fill="#dcfce7"/>
+  <circle cx="120" cy="88" r="38" fill="#22c55e"/>
+  <rect x="56" y="138" width="128" height="74" rx="28" fill="#166534"/>
+  <text x="120" y="132" text-anchor="middle" fill="#14532d" font-size="26" font-family="Verdana">RD</text>
+</svg>

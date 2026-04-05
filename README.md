@@ -1,40 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Ventionz SaaS Web Application
 
-## Getting Started
+A modern SaaS-style web app built with a PERN-friendly architecture:
 
-First, run the development server:
+- Frontend: Next.js (React, Pages Router)
+- Styling: Tailwind CSS
+- Animations: Framer Motion
+- Backend layer: Next.js API routes + Supabase services
+- Database: Supabase Postgres
+
+## Step 1: Install dependencies
+
+```bash
+npm install
+```
+
+## Step 2: Configure environment variables
+
+Copy `.env.example` into `.env.local` and fill in your Supabase values:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+## Step 3: Create Supabase table
+
+Run SQL from `supabase/schema.sql` in Supabase SQL Editor.
+
+This creates `contact_requests` and enables row-level security policy for contact form inserts.
+
+## Step 4: Start the app
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```text
+components/
+	dashboard/
+	layout/
+	staff/
+	ui/
+data/
+lib/
+pages/
+	api/
+	business/
+	dashboard/
+styles/
+supabase/
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Implemented Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` Landing Page
+- `/about`
+- `/staff`
+- `/contact`
+- `/services`
+- `/features`
+- `/business`
+- `/business/[type]` subpages (startups, ecommerce, enterprise)
+- `/login`
+- `/signup`
+- `/dashboard` (protected)
 
-## Learn More
+## Authentication Flow
 
-To learn more about Next.js, take a look at the following resources:
+- Signup: `supabase.auth.signUp`
+- Login: `supabase.auth.signInWithPassword`
+- Protected dashboard checks session and redirects to `/login` if unauthenticated
+- Logout via `supabase.auth.signOut`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev
+npm run lint
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy to Vercel (recommended):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Import repository/project in Vercel.
+2. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in project environment variables.
+3. Build command: `npm run build`
+4. Output: standard Next.js output
+
+## Notes
+
+- If Supabase env vars are missing, auth and contact form actions will not work.
+- UI is fully responsive and built with reusable components.
