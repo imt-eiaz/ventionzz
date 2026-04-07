@@ -10,38 +10,100 @@ import {
 export const features = [
   {
     icon: FiHeadphones,
-    title: "Unified Service Desk",
+    title: "School - Institute - University",
+    link: "ventionz.com",
     description:
-      "Handle customer tickets, live chat, and SLA workflows from one intelligent support hub.",
+      "Register your school, institute or university with us and get access to our comprehensive support system designed to enhance the educational experience for students, faculty, and staff.",
   },
   {
     icon: FiActivity,
-    title: "Automation Rules",
+    title: "HandiCraft - Artisans",
     description:
-      "Automatically route requests and trigger actions with workflow rules tailored to your team.",
+      "Empower your handicraft business with our tailored support solutions, designed to help artisans connect with customers, manage orders, and grow their brand effectively.",
   },
   {
     icon: FiLayers,
-    title: "Omnichannel Inbox",
+    title: "Learn Online - E-Learning",
     description:
-      "Bring email, chat, forms, and social conversations together with full interaction history.",
+      "Access a wide range of online courses and learning resources to enhance your skills and knowledge from the comfort of your home.",
   },
   {
     icon: FiBarChart2,
-    title: "Actionable Analytics",
+    title: "Businesses - Startups",
     description:
-      "Track response time, CSAT trends, and team performance in real-time visual dashboards.",
+      "Optimize your business operations with our comprehensive support system, designed to help startups and established businesses manage customer interactions, streamline workflows, and drive growth.",
   },
   {
     icon: FiShield,
-    title: "Enterprise Security",
+    title: "Bookstore - Library",
     description:
-      "Role-based access, audit logs, and secure data controls built for modern compliance needs.",
+      "Enhance your bookstore or library's customer service with our support system, designed to help you manage inquiries, track inventory, and provide a seamless experience for your patrons.",
   },
   {
     icon: FiZap,
-    title: "Fast Team Onboarding",
+    title: "Visitor - Customer",
     description:
-      "Deploy quickly with reusable templates, playbooks, and guided setup for every department.",
+      "Experience exceptional support as a visitor or customer with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Property Management - Real Estate",
+    description:
+      "Experience exceptional support in property management and real estate with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Transportation - Logistics",
+    description:
+      "Experience exceptional support in transportation and logistics with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Jobs - Recruitment",
+    description:
+      "Experience exceptional support in jobs and recruitment with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Medical - Healthcare",
+    description:
+      "Experience exceptional support in medical and healthcare with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Council - Municipality",
+    description:
+      "Experience exceptional support in council and municipality services with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Find Employee - Job Seeker",
+    description:
+      "Experience exceptional support in finding employees and job seekers with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Find Product - Service",
+    description:
+      "Experience exceptional support in finding products and services with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Computers - Electronics",
+    description:
+      "Experience exceptional support in computers and electronics with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  {
+    icon: FiZap,
+    title: "Resturents - Food Delivery",
+    description:
+      "Experience exceptional support in restaurants and food delivery with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
+  },
+  ,
+  {
+    icon: FiZap,
+    title: "Other Businesses",
+    description:
+      "Experience exceptional support in other businesses with our user-friendly system, designed to provide quick and efficient assistance for all your needs.",
   },
 ];

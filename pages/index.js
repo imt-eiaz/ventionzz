@@ -32,22 +32,15 @@ export default function HomePage() {
               variants={fadeInUp}
               transition={{ duration: 0.55 }}
             >
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-(--brand)">
-                Customer Ops, Reimagined
-              </p>
               <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-6xl">
-                Build a support engine that feels premium and performs at scale.
+                Build a support and you business in Swat.
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
-                Ventionz combines AI-ready workflows, omnichannel support, and
-                operational analytics into a single SaaS platform designed for
-                growing teams.
-              </p>
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <PrimaryButton href="/signup">Start Free Trial</PrimaryButton>
                 <PrimaryButton
                   href="/services"
-                  className="bg-white text-slate-900 ring-1 ring-slate-300 hover:bg-slate-100"
+                  className="bg-blue-500 text-slate-900 ring-1 ring-slate-300 hover:bg-blue-600"
                 >
                   Explore Services
                 </PrimaryButton>
@@ -62,18 +55,14 @@ export default function HomePage() {
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_35px_90px_-45px_rgba(15,23,42,0.45)]"
             >
               <div className="rounded-2xl bg-[linear-gradient(140deg,#0f766e_0%,#0e7490_70%,#0284c7_100%)] p-6 text-white">
-                <p className="text-sm text-cyan-100">
-                  Live Operations Snapshot
-                </p>
-                <h3 className="mt-2 text-2xl font-bold">
-                  96.4% Ticket Resolution SLA
-                </h3>
+                <p className="text-sm text-cyan-100">Number of Registered</p>
+                <h3 className="mt-2 text-2xl font-bold">Businesses</h3>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   {[
-                    ["First Response", "3m 42s"],
-                    ["Open Tickets", "184"],
-                    ["CSAT", "4.8/5"],
-                    ["Automations", "142"],
+                    ["Schools", "9"],
+                    ["Shops", "34"],
+                    ["Instituts", "4"],
+                    ["Handicrafts", "7"],
                   ].map(([label, value]) => (
                     <div
                       key={label}
@@ -89,71 +78,35 @@ export default function HomePage() {
           </section>
 
           <section className="mx-auto w-full max-w-6xl px-6 py-16">
-            <SectionHeading
-              centered
-              eyebrow="Features"
-              title="Everything your support team needs"
-              description="Launch quickly with battle-tested modules for service delivery, customer success, and intelligent automation."
-            />
+            <SectionHeading centered title="Local Businesses Trust Ventionz" />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {features.map((item, idx) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.45, delay: idx * 0.06 }}
-                >
-                  <FeatureCard {...item} />
-                </motion.div>
-              ))}
-            </div>
-          </section>
+              {features.map((item, idx) => {
+                const categoryLinks = {
+                  Schools: "https://ventionz.com/schools",
+                  Shops: "https://ventionz.com/shops",
+                  Instituts: "https://ventionz.com/instituts",
+                  Handicrafts: "https://ventionz.com/handicrafts",
+                };
+                const href = categoryLinks[item.title] || "https://ventionz.com";
 
-          <section className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-14 md:grid-cols-2 md:items-center">
-            <div>
-              <SectionHeading
-                eyebrow="About Services"
-                title="We help teams turn support into a growth channel"
-                description="Our consultants and product experts work with your team to build resilient workflows, consistent customer journeys, and measurable operational outcomes."
-              />
-              <ul className="mt-6 space-y-3 text-sm text-slate-600">
-                <li>
-                  Custom implementation for service desk and knowledge base.
-                </li>
-                <li>
-                  Process optimization for first-response and resolution
-                  efficiency.
-                </li>
-                <li>Team training and ongoing success frameworks.</li>
-              </ul>
-            </div>
-
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_25px_65px_-35px_rgba(15,23,42,0.5)]">
-              <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Why teams choose Ventionz
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                  Faster onboarding, measurable quality, and a modern customer
-                  experience strategy designed for digital-first businesses.
-                </p>
-                <div className="mt-6 space-y-3">
-                  {[
-                    "Dedicated onboarding architect",
-                    "90-day success roadmap",
-                    "Quarterly performance optimization",
-                  ].map((item) => (
-                    <div
-                      key={item}
-                      className="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                return (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.45, delay: idx * 0.06 }}
+                  >
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span>{item}</span>
-                      <FiArrowRight size={16} className="text-slate-400" />
-                    </div>
-                  ))}
-                </div>
-              </div>
+                      <FeatureCard {...item} />
+                    </a>
+                  </motion.div>
+                );
+              })}
             </div>
           </section>
 
@@ -174,7 +127,7 @@ export default function HomePage() {
               <div className="mt-6 md:mt-0">
                 <PrimaryButton
                   href="/contact"
-                  className="bg-white text-slate-900 hover:bg-slate-100"
+                  className="bg-blue-500 text-slate-900 hover:bg-blue-600"
                 >
                   Start Your Project
                 </PrimaryButton>

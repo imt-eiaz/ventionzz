@@ -5,7 +5,7 @@ import PrimaryButton from "@/components/ui/PrimaryButton";
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Features", href: "/features" },
+  { label: "Businesses", href: "/features" },
   { label: "Contact", href: "/contact" },
 ];
 
