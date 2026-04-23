@@ -46,13 +46,13 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/login"
+            href="https://www.ventionz.com/"
             className="hidden text-sm font-medium text-slate-600 hover:text-slate-900 md:inline-block"
           >
             Login
           </Link>
           <PrimaryButton
-            href="/signup"
+            href="https://www.ventionz.com/"
             className="px-5 py-2.5 text-xs md:text-sm"
           >
             Get Started

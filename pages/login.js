@@ -58,7 +58,7 @@ export default function LoginPage() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-90 bg-[radial-gradient(circle_at_15%_20%,rgba(15,118,110,0.22),transparent_45%),radial-gradient(circle_at_80%_20%,rgba(2,132,199,0.2),transparent_40%)]" />
         <section className="relative z-10 mx-auto w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_30px_80px_-35px_rgba(15,23,42,0.5)]">
           <h1 className="text-2xl font-bold tracking-tight text-slate-900">
-            Welcome back
+            Welcome back Umair
           </h1>
           <p className="mt-2 text-sm text-slate-600">
             Login to access your Ventionz dashboard.
