@@ -33,7 +33,7 @@ export default function HomePage() {
               transition={{ duration: 0.55 }}
             >
               <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-6xl">
-                Build a support and you business in Swat.
+                Build a support and you business in Swat Pakistan.
               </h1>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -87,7 +87,8 @@ export default function HomePage() {
                   Instituts: "https://ventionz.com/instituts",
                   Handicrafts: "https://ventionz.com/handicrafts",
                 };
-                const href = categoryLinks[item.title] || "https://ventionz.com";
+                const href =
+                  categoryLinks[item.title] || "https://ventionz.com";
 
                 return (
                   <motion.div
@@ -97,11 +98,7 @@ export default function HomePage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.45, delay: idx * 0.06 }}
                   >
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={href} target="_blank" rel="noopener noreferrer">
                       <FeatureCard {...item} />
                     </a>
                   </motion.div>
