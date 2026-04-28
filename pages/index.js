@@ -40,7 +40,7 @@ export default function HomePage() {
                 <PrimaryButton href="/signup">Start Free Trial</PrimaryButton>
                 <PrimaryButton
                   href="/services"
-                  className="bg-blue-500 text-slate-900 ring-1 ring-slate-300 hover:bg-blue-600"
+                  //className="bg-blue-500 text-slate-900 ring-1 ring-slate-300 hover:bg-blue-600"
                 >
                   Explore Services
                 </PrimaryButton>
