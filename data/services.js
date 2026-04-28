@@ -1,22 +1,27 @@
 export const services = [
   {
-    title: "Managed Service Desk",
+    title: "Empowering Local Businesses with Digital Solutions",
     description:
-      "A complete support desk setup with workflows, SLA policy mapping, and operational best practices.",
+      "Turn clicks into customers. We build sleek websites, run smart marketing, and give your business the digital edge it needs to stand out locally.",
   },
   {
-    title: "Customer Portal Development",
+    title: "Your Local Partner for Digital Growth",
     description:
-      "Branded self-service portals for ticket tracking, knowledge base, and account-level escalation.",
+      "From zero to online hero—we help your business get noticed, attract more customers, and grow faster with powerful digital tools.",
   },
   {
-    title: "Workflow Automation Consulting",
+    title: "Digital Services Built for Local Success",
     description:
-      "Custom automation design for priority routing, assignment, notifications, and escalation handling.",
+      "Get seen, get chosen, get growing. We craft modern digital experiences that put your business ahead of the competition.",
   },
   {
-    title: "Support Data Intelligence",
+    title: "Helping Local Businesses Thrive Online",
     description:
-      "Performance dashboards and reporting for CSAT, response time, workload forecasting, and quality.",
+      "More visibility, more customers, more growth. We turn your online presence into a 24/7 sales machine.",
+  },
+  {
+    title: "Grow Your Business with Smart Digital Solutions",
+    description:
+      "Stand out in your area with eye-catching design, targeted marketing, and strategies that actually drive results.",
   },
 ];

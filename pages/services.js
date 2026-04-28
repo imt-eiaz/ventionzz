@@ -15,8 +15,8 @@ export default function ServicesPage() {
         <main className="mx-auto w-full max-w-6xl px-6 py-16">
           <SectionHeading
             eyebrow="Products & Services"
-            title="From implementation to optimization"
-            description="We deliver the product capabilities and strategic guidance needed to modernize customer support operations."
+            title="Empowering Local Businesses with Digital Solutions"
+            description="We help local businesses grow online through modern websites, digital marketing, and smart technology solutions tailored to your community."
           />
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
