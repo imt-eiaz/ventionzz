@@ -1,7 +1,7 @@
 import {
   FiActivity,
   FiBarChart2,
-  FiHeadphones,
+  FiBook,
   FiLayers,
   FiShield,
   FiZap,
@@ -9,7 +9,7 @@ import {
 
 export const features = [
   {
-    icon: FiHeadphones,
+    icon: FiBook,
     title: "School - Institute - University",
     href: "/schools",
     description:

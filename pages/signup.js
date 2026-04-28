@@ -69,6 +69,14 @@ export default function SignupPage() {
         <title>Signup | Ventionz</title>
       </Head>
       <main className="relative min-h-screen bg-slate-50 px-4 py-16">
+        <div className="mb-12">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm font-medium text-(--brand) hover:underline"
+          >
+            ← Back to Home
+          </Link>
+        </div>
         <div className="pointer-events-none absolute inset-x-0 top-0 h-90 bg-[radial-gradient(circle_at_20%_25%,rgba(15,118,110,0.22),transparent_45%),radial-gradient(circle_at_75%_22%,rgba(2,132,199,0.2),transparent_40%)]" />
         <section className="relative z-10 mx-auto w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_30px_80px_-35px_rgba(15,23,42,0.5)]">
           <h1 className="text-2xl font-bold tracking-tight text-slate-900">
