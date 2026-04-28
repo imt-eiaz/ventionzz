@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import FeatureCard from "@/components/ui/FeatureCard";
@@ -80,30 +81,19 @@ export default function HomePage() {
           <section className="mx-auto w-full max-w-6xl px-6 py-16">
             <SectionHeading centered title="Local Businesses Trust Ventionz" />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {features.map((item, idx) => {
-                const categoryLinks = {
-                  Schools: "https://ventionz.com/schools",
-                  Shops: "https://ventionz.com/shops",
-                  Instituts: "https://ventionz.com/instituts",
-                  Handicrafts: "https://ventionz.com/handicrafts",
-                };
-                const href =
-                  categoryLinks[item.title] || "https://ventionz.com";
-
-                return (
-                  <motion.div
-                    key={item.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.45, delay: idx * 0.06 }}
-                  >
-                    <a href={href} target="_blank" rel="noopener noreferrer">
-                      <FeatureCard {...item} />
-                    </a>
-                  </motion.div>
-                );
-              })}
+              {features.map((item, idx) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.45, delay: idx * 0.06 }}
+                >
+                  <Link href={item.href}>
+                    <FeatureCard {...item} />
+                  </Link>
+                </motion.div>
+              ))}
             </div>
           </section>
 

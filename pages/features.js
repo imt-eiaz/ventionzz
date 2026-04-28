@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import SiteLayout from "@/components/layout/SiteLayout";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FeatureCard from "@/components/ui/FeatureCard";
@@ -19,8 +21,18 @@ export default function FeaturesPage() {
           />
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((item) => (
-              <FeatureCard key={item.title} {...item} />
+            {features.map((item, idx) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: idx * 0.06 }}
+              >
+                <Link href={item.href}>
+                  <FeatureCard {...item} />
+                </Link>
+              </motion.div>
             ))}
           </div>
         </main>
