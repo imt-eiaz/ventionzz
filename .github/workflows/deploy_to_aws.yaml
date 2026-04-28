@@ -30,19 +30,16 @@ jobs:
       # 5. Deploy files to EC2
       - name: Deploy to EC2
         uses: easingthemes/ssh-deploy@v5.0.3
-        env:
+        with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ec2-13-61-105-166.eu-north-1.compute.amazonaws.com
           REMOTE_USER: ubuntu
           TARGET: /var/www/ventionzz/
-
+          ARGS: "-rlgoDzvc -i --delete"
           SOURCE: "."
-          EXCLUDE: |
-            node_modules
-            .git
-            .github
-            .next/cache
-            *.log
+          EXCLUDE: "/node_modules/, /.git/, /.github/, .next/cache/, *.log"
+          SCRIPT_BEFORE: |
+            mkdir -p /var/www/ventionzz
 
       # 6. Restart app on server
       - name: Restart server
