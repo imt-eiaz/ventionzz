@@ -32,7 +32,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v5.0.3
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ec2-13-61-105-166.eu-north-1.compute.amazonaws.com
+          REMOTE_HOST: ec2-16-192-9-115.eu-north-1.compute.amazonaws.com
           REMOTE_USER: ubuntu
           TARGET: /var/www/ventionzz/
           ARGS: "-rlgoDzvc -i --delete"
@@ -45,7 +45,7 @@ jobs:
       - name: Restart server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ec2-13-61-105-166.eu-north-1.compute.amazonaws.com
+          host: ec2-16-192-9-115.eu-north-1.compute.amazonaws.com
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
