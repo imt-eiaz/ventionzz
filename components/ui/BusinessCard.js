@@ -15,12 +15,12 @@ export default function BusinessCard({ item }) {
           </li>
         ))}
       </ul>
-      <Link
+      {/* <Link
         href={`/business/${item.slug}`}
         className="mt-5 inline-flex rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
       >
         Learn More
-      </Link>
+      </Link> */}
     </article>
   );
 }
