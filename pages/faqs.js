@@ -66,8 +66,8 @@ export default function FaqsPage() {
               centered
               titleClassName="text-white"
             />
-            <div className="mt-8 flex flex-col gap-4 text-center sm:flex-row sm:items-center sm:justify-between">
-              <p className="max-w-2xl text-sm leading-7 text-cyan-100">
+            <div className="mt-8 text-center">
+              <p className="mx-auto max-w-2xl text-sm leading-7 text-cyan-100">
                 Explore answers for local businesses and technology teams
                 looking to modernize customer operations and IT workflows.
               </p>
