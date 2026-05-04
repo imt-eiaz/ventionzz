@@ -3,6 +3,7 @@ export default function SectionHeading({
   title,
   description,
   centered,
+  titleClassName = "text-slate-900",
 }) {
   return (
     <div className={`${centered ? "mx-auto text-center" : ""} max-w-2xl`}>
@@ -11,7 +12,9 @@ export default function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+      <h2
+        className={`text-3xl font-bold tracking-tight md:text-4xl ${titleClassName}`}
+      >
         {title}
       </h2>
       {description ? (
