@@ -165,6 +165,10 @@ export default function HomePage() {
                 />
               </div>
 
+              <div className="mb-8 flex justify-center">
+                <PrimaryButton href="/faqs">See more questions</PrimaryButton>
+              </div>
+
               <div className="rounded-3xl bg-white p-6 shadow-sm text-slate-900">
                 <div className="space-y-4">
                   {faqItems.map((item, index) => {
