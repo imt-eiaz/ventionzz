@@ -12,6 +12,17 @@ export const schools = [
   },
   {
     id: 2,
+    name: "The Asian School & College",
+    type: "Private School",
+    location: "Malak Abad Nawakaly Mingora Swat",
+    students: "850+",
+    founded: "2019",
+    contact: "director@asian.edu.pk",
+    website: "https://www.asian.edu.pk/",
+    link: "https://www.asian.edu.pk/",
+  },
+  {
+    id: 3,
     name: "Saidu Academy",
     type: "Private School",
     location: "Saidu Swat",
@@ -21,7 +32,7 @@ export const schools = [
     website: "saidoacademy.edu.pk",
   },
   {
-    id: 3,
+    id: 4,
     name: "Government School for Girls",
     type: "Girls School",
     location: "Mingora, Swat",
@@ -31,7 +42,7 @@ export const schools = [
     website: "girlsswat.edu.pk",
   },
   {
-    id: 4,
+    id: 5,
     name: "Islamic Institute of Learning",
     type: "Islamic School",
     location: "Khwazakhela, Swat",
@@ -41,7 +52,7 @@ export const schools = [
     website: "islamicswat.edu.pk",
   },
   {
-    id: 5,
+    id: 6,
     name: "Cambridge College Swat",
     type: "Private College",
     location: "Marghuzar, Swat",
@@ -51,7 +62,7 @@ export const schools = [
     website: "cambridgeswat.edu.pk",
   },
   {
-    id: 6,
+    id: 7,
     name: "Federal Government School",
     type: "Public School",
     location: "Mingora, Swat",
@@ -61,7 +72,7 @@ export const schools = [
     website: "federalswat.edu.pk",
   },
   {
-    id: 7,
+    id: 8,
     name: "Alpina School",
     type: "Private School",
     location: "Marghuzar, Swat",
@@ -71,7 +82,7 @@ export const schools = [
     website: "alpina.edu.pk",
   },
   {
-    id: 8,
+    id: 9,
     name: "Swat Model School",
     type: "Public School",
     location: "Khwazakhela, Swat",
@@ -81,7 +92,7 @@ export const schools = [
     website: "swatmodel.edu.pk",
   },
   {
-    id: 9,
+    id: 10,
     name: "Victory School System",
     type: "Private School",
     location: "Saidu Swat",
@@ -91,7 +102,7 @@ export const schools = [
     website: "victoryswat.edu.pk",
   },
   {
-    id: 10,
+    id: 11,
     name: "Green Valley Academy",
     type: "Private School",
     location: "Mingora, Swat",
@@ -101,7 +112,7 @@ export const schools = [
     website: "greenvalley.edu.pk",
   },
   {
-    id: 11,
+    id: 12,
     name: "Horizon International School",
     type: "International School",
     location: "Marghuzar, Swat",
@@ -111,7 +122,7 @@ export const schools = [
     website: "horizonswat.edu.pk",
   },
   {
-    id: 12,
+    id: 13,
     name: "Quality Education Institute",
     type: "Private College",
     location: "Khwazakhela, Swat",
@@ -121,7 +132,7 @@ export const schools = [
     website: "qualityei.edu.pk",
   },
   {
-    id: 13,
+    id: 14,
     name: "Swat Public School",
     type: "Primary & Secondary",
     location: "Mingora, Swat",
