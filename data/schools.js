@@ -19,7 +19,7 @@ export const schools = [
     founded: "2019",
     contact: "director@asian.edu.pk",
     website: "https://www.asian.edu.pk/",
-    link: "https://www.asian.edu.pk/",
+    link: "www.asian.edu.pk/",
   },
   {
     id: 3,
