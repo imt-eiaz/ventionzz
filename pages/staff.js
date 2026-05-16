@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import SiteLayout from "@/components/layout/SiteLayout";
 import SectionHeading from "@/components/ui/SectionHeading";
 import StaffCard from "@/components/staff/StaffCard";
@@ -19,9 +20,27 @@ export default function StaffPage() {
           />
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {staffMembers.map((member) => (
-              <StaffCard key={member.name} member={member} />
-            ))}
+            {staffMembers.map((member) =>
+              member.externalUrl ? (
+                <a
+                  key={member.slug}
+                  href={member.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
+                  <StaffCard member={member} />
+                </a>
+              ) : (
+                <Link
+                  key={member.slug}
+                  href={`/staff/${member.slug}`}
+                  className="group block"
+                >
+                  <StaffCard member={member} />
+                </Link>
+              ),
+            )}
           </div>
         </main>
       </SiteLayout>

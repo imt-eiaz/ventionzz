@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function StaffCard({ member }) {
   return (
-    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_20px_55px_-35px_rgba(15,23,42,0.45)]">
+    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_20px_55px_-35px_rgba(15,23,42,0.45)] transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_24px_70px_-40px_rgba(15,23,42,0.45)]">
       <div className="relative h-24 w-24 overflow-hidden rounded-2xl">
         <Image src={member.image} alt={member.name} fill sizes="96px" />
       </div>

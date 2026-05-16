@@ -3,6 +3,7 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 const footerLinks = [
   { label: "Home", href: "/" },
+  { label: "Meet Staff", href: "/staff" },
   { label: "Privacy", href: "/privacy" },
   { label: "Contact", href: "/contact" },
 ];
