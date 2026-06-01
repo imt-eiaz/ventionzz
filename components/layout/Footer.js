@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FaFacebook, FaYoutube, FaTiktok } from "react-icons/fa";
 
 const footerLinks = [
   { label: "Home", href: "/" },
@@ -9,9 +9,21 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { label: "Twitter", href: "https://x.com", icon: FiTwitter },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: FiLinkedin },
-  { label: "GitHub", href: "https://github.com", icon: FiGithub },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/ventionz",
+    icon: FaFacebook,
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@Ventionnz",
+    icon: FaYoutube,
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@ventionzz",
+    icon: FaTiktok,
+  },
 ];
 
 export default function Footer() {

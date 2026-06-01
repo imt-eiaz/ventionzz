@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 
@@ -20,9 +21,21 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 text-xl font-extrabold tracking-tight text-slate-900"
         >
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-(--brand) text-sm text-white">
-            VZ
-          </span>
+          {/* Mobile: small square logo; Desktop: full logo */}
+          <Image
+            src="/header-logo-400x120.png"
+            alt="Ventionz"
+            width={36}
+            height={36}
+            className="block h-9 w-auto rounded-xl md:hidden"
+          />
+          <Image
+            src="/header-logo-400x120.png"
+            alt="Ventionz"
+            width={160}
+            height={48}
+            className="hidden h-9 w-auto rounded-xl md:block"
+          />
           Ventionz
         </Link>
 
