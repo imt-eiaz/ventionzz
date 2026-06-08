@@ -1,6 +1,17 @@
 export const schools = [
   {
     id: 1,
+    name: "The Best School & College",
+    type: "Private School",
+    location: "Mingora Swat",
+    students: "850+",
+    founded: "2019",
+    contact: "director@bestschool.edu.pk",
+    website: "www.bestschool.edu.pk/",
+    link: "http://54.145.209.99/",
+  },
+  {
+    id: 2,
     name: "Candle Public School",
     type: "Primary",
     location: "Balogram, Swat",
@@ -9,17 +20,6 @@ export const schools = [
     contact: "contact@candlepublic.edu.pk",
     website: "candlepublic.edu.pk",
     link: "http://52.71.253.131/",
-  },
-  {
-    id: 2,
-    name: "The Asian School & College",
-    type: "Private School",
-    location: "Malak Abad Nawakaly Mingora Swat",
-    students: "850+",
-    founded: "2019",
-    contact: "director@asian.edu.pk",
-    website: "www.asian.edu.pk/",
-    link: "http://54.145.209.99/",
   },
   {
     id: 3,
