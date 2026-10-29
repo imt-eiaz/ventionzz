@@ -66,7 +66,7 @@ export default function HomePage() {
               transition={{ duration: 0.55 }}
             >
               <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-6xl">
-                Build and Support Your Business in Swat, Pakistan.
+                Build and Support Your Business in Swat, Pakistan
               </h1>
 
               <div className="mt-8 flex flex-wrap gap-4">
