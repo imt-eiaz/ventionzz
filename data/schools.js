@@ -19,7 +19,6 @@ export const schools = [
     founded: "2020",
     contact: "contact@candlepublic.edu.pk",
     website: "candlepublic.edu.pk",
-    link: "http://52.71.253.131/",
   },
   {
     id: 3,
